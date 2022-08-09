@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content_title %}{% endblock %}
+{% block content %}        
+
+{% for article in articles|sort(attribute='title') %}
+  <dd><li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li></dd>
+{% endfor %}
+
+{% endblock content %}
+
