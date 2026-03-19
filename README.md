@@ -9,5 +9,20 @@ This theme harnesses Pelican to create your personal recipes website on lightnin
 ## Screenshot
 ![Screenshot](screenshot.webp)
 
+## Pelican configuration parameters
+### Copyright date
+In order for your webpage to always display the actual year in your copyright notice, add this parameter at the beginning of your config file:
+
+```
+import datetime
+CURRENT_YEAR = datetime.date.today().year
+```
+
+### Template
+For an example on how to setup your pelicanconf.py you may checkout the config of [this](https://codeberg.org/web_pat/rezepte_patrickweber_info/src/branch/master/pelicanconf.py) existing website.
+
+## Setup
+Need help setting up your own recipe website? Check out this [howto article](https://www.patrickweber.info/en/setting-up-a-static-recipe-website-with-pelican-and-tuxlite_recipes/)
+
 ## License
 This project is licensed under the [MIT license](./LICENSE).

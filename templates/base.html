@@ -156,11 +156,7 @@
 
 <footer>
 <br />
-{% if articles %}
-   {% set copy_date = articles[0].date.strftime('%Y') %}
-{% else %}
-   {% set copy_date = '' %}
-{% endif %}
+{% set copy_date = CURRENT_YEAR %}
 <p><a href="{{ SITEURL }}">{{ SITENAME }}</a> &copy; {{ AUTHOR }} {{ copy_date }}. Powered by <a href="https://getpelican.com">Pelican</a> using <a href="https://notabug.org/web_pat/tuxlite_recipes"</a>theme.</p>
 </footer>
 
