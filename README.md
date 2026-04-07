@@ -22,7 +22,7 @@ CURRENT_YEAR = datetime.date.today().year
 For an example on how to setup your pelicanconf.py you may checkout the config of [this](https://codeberg.org/web_pat/rezepte_patrickweber_info/src/branch/master/pelicanconf.py) existing website.
 
 ## Setup
-Need help setting up your own recipe website? Check out this [howto article](https://www.patrickweber.info/en/setting-up-a-static-recipe-website-with-pelican-and-tuxlite_recipes/)
+Clone or download this repository, then set `THEME = 'path/to/tuxlite_recipes'` in your `pelicanconf.py`. Make sure Pelican and its dependencies are installed (`pip install pelican`), and run `pelican content` to generate your site. For a full walkthrough, check out this [howto article](https://www.patrickweber.info/en/setting-up-a-static-recipe-website-with-pelican-and-tuxlite_recipes/).
 
 ## License
 This project is licensed under the [MIT license](./LICENSE).
