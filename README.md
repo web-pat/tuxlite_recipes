@@ -34,5 +34,9 @@ see [this site's `pelicanconf.py`](https://codeberg.org/web_pat/rezepte_patrickw
 ## Setup
 Clone or download this repository, then set `THEME = 'path/to/tuxlite_recipes'` in your `pelicanconf.py`. Make sure Pelican and its dependencies are installed (`pip install pelican`), and run `pelican content` to generate your site. For a full walkthrough, check out this [howto article](https://www.patrickweber.info/en/setting-up-a-static-recipe-website-with-pelican-and-tuxlite_recipes/).
 
+## Todo
+
+Recommended future improvements: add optional recipe metadata for preparation/cooking/total time and servings, expose category and dietary tags, and document a consistent Ingredients → Method → Notes/storage format; improve browsing with page headings, recipe counts, metadata in listings, and lightweight local search and filters with a no-JavaScript fallback; add print styles; improve recipe readability on phones (including article padding), semantic landmarks, skip links, and optional ingredient check-off; consider serving-size scaling only once quantities and units are structured; add page descriptions, canonical URLs, and Recipe JSON-LD generated from the same structured fields as the visible recipe; fix the footer anchor and list markup, respect configured archive/tag URLs, handle home links when `SITEURL` is empty, and add example recipes and generated-site regression tests. Keep these improvements lightweight and compatible with existing recipes.
+
 ## License
 This project is licensed under the [MIT license](./LICENSE).

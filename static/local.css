@@ -23,6 +23,36 @@
 .navbar .divider-vertical { border-right: 1px solid #4D4D4D; }
 .navbar { margin-bottom: 4em; } 
 
+.navbar a:focus {
+  outline: 2px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+/* Keep navigation visible without Bootstrap's JavaScript collapse plugin. */
+@media (max-width: 980px) {
+  .navbar { margin-bottom: 2em; }
+  .navbar .brand {
+    float: none;
+    display: block;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .navbar .nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  .navbar .nav > li { max-width: 100%; }
+  .navbar .nav > li > a {
+    box-sizing: border-box;
+    min-height: 44px;
+    padding: 10px 12px;
+    line-height: 24px;
+    overflow-wrap: anywhere;
+  }
+}
+
 
 /* Styling for elements */
 body { font-size: 100%; }

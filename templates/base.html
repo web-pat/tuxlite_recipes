@@ -36,19 +36,12 @@
 
 <body>
 
-<div class="navbar">
+<nav class="navbar" aria-label="Primary navigation">
     <div class="navbar-inner">
     <div class="container">
 
-         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-         </a>
-
         <a class="brand" href="{{ SITEURL }}">{{ SITENAME }}</a>
 
-        <div class="nav-collapse">
         <ul class="nav">
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
@@ -60,11 +53,10 @@
         {% endfor %}
         {% endif %}
         </ul>
-        </div>
         
     </div>
     </div>
-</div>
+</nav>
 
 <div class="container">
     <div class="content">
